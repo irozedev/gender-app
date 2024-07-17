@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost:27017/gender_reveal', { useNewUrlParser: t
 
 const userSchema = new mongoose.Schema({
   nickname: String,
-  avatar: String,
+  avatar: { type: Map, of: String },
   team: String,
 });
 
