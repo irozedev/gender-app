@@ -1,0 +1,97 @@
+.main-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fef6fb;
+    padding: 16px;
+    overflow-y: auto;
+  }
+  
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  
+  .countdown-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  
+  .countdown-timer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .countdown-timer > div {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 32px;
+    position: relative;
+  }
+  
+  .team {
+    text-align: center;
+    margin: 0 50px;
+  }
+  
+  .vs {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .user-avatar {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-boy-avatar {
+    border: 3px solid #38bdf8;
+  }
+  
+  .team-girl-avatar {
+    border: 3px solid #f472b6;
+  }
+  
+  .wheel-container {
+    margin-top: 32px;
+  }
+  
+  .result-container {
+    margin-top: 16px;
+  }
+  
+  .users-container {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .text-boy {
+    color: #38bdf8;
+  }
+  
+  .text-girl {
+    color: #f472b6;
+  }
+  

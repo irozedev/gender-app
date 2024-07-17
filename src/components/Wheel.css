@@ -1,0 +1,120 @@
+.wheel-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .wheel {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid #000;
+    position: relative;
+    transition: transform 5s ease-out;
+    overflow: hidden;
+  }
+  
+  .segment {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+  }
+  
+  .segment.boy {
+    background-color: #38bdf8;
+  }
+  
+  .segment.girl {
+    background-color: #f472b6;
+  }
+  
+  .segment.highlight {
+    animation: highlight 3s forwards;
+  }
+  
+  @keyframes highlight {
+    from { box-shadow: 0 0 10px #fff; }
+    to { box-shadow: 0 0 20px #ff0; }
+  }
+  
+  .segment:nth-child(1) {
+    transform: rotate(0deg);
+  }
+  
+  .segment:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  
+  .segment:nth-child(3) {
+    transform: rotate(90deg);
+  }
+  
+  .segment:nth-child(4) {
+    transform: rotate(135deg);
+  }
+  
+  .segment:nth-child(5) {
+    transform: rotate(180deg);
+  }
+  
+  .segment:nth-child(6) {
+    transform: rotate(225deg);
+  }
+  
+  .segment:nth-child(7) {
+    transform: rotate(270deg);
+  }
+  
+  .segment:nth-child(8) {
+    transform: rotate(315deg);
+  }
+  
+  .segment .text {
+    transform: rotate(24.5deg) translate(-5px, -36px);
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .arrow {
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #000;
+    z-index: 10;
+  }
+  
+  .spin-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .spin-button:hover {
+    background-color: #333;
+  }
+  
