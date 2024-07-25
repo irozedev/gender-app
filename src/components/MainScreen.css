@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 .main-screen {
     height: 100vh;
     display: flex;
@@ -7,22 +11,22 @@
     background-color: #fef6fb;
     padding: 16px;
     overflow-y: auto;
-  }
-  
-  .header {
+}
+
+.header {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 16px;
-  }
-  
-  .countdown-container {
+}
+
+.countdown-container {
     display: flex;
     justify-content: center;
     margin-bottom: 16px;
-  }
-  
-  .countdown-timer {
+}
+
+.countdown-timer {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -31,14 +35,14 @@
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .countdown-timer > div {
+}
+
+.countdown-timer > div {
     text-align: center;
     flex: 1;
-  }
-  
-  .team-container {
+}
+
+.team-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,52 +50,51 @@
     max-width: 800px;
     margin-bottom: 32px;
     position: relative;
-  }
-  
-  .team {
+}
+
+.team {
     text-align: center;
     margin: 0 50px;
-  }
-  
-  .vs {
+}
+
+.vs {
     font-size: 24px;
     font-weight: bold;
-  }
-  
-  .user-avatar {
+}
+
+.user-avatar {
     position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .team-boy-avatar {
+}
+
+.team-boy-avatar {
     border: 3px solid #38bdf8;
-  }
-  
-  .team-girl-avatar {
+}
+
+.team-girl-avatar {
     border: 3px solid #f472b6;
-  }
-  
-  .wheel-container {
+}
+
+.wheel-container {
     margin-top: 32px;
-  }
-  
-  .result-container {
+}
+
+.result-container {
     margin-top: 16px;
-  }
-  
-  .users-container {
+}
+
+.users-container {
     width: 100%;
     max-width: 400px;
-  }
-  
-  .text-boy {
+}
+
+.text-boy {
     color: #38bdf8;
-  }
-  
-  .text-girl {
+}
+
+.text-girl {
     color: #f472b6;
-  }
-  
+}

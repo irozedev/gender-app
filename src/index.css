@@ -4,4 +4,9 @@
 
 body {
   @apply font-sans;
+  font-family: 'Roboto Slab', serif;
+}
+
+.title {
+  font-family: 'Roboto Slab', serif;
 }

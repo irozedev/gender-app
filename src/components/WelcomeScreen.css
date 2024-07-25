@@ -1,0 +1,61 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.welcome-screen {
+  @apply flex flex-col items-center justify-center h-screen;
+  background: linear-gradient(to right, #ffcccb, #add8e6);
+}
+
+.welcome-text {
+  @apply bg-white bg-opacity-50 p-4 rounded-lg shadow-md max-w-md mx-auto;
+  white-space: pre-line;
+}
+
+.form {
+  @apply flex flex-col items-center bg-white bg-opacity-80 p-6 rounded shadow-md;
+}
+
+.input {
+  @apply p-2 mb-4 w-full max-w-xs border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.input-error {
+  @apply border-red-500 focus:ring-red-500;
+}
+
+.submit-button {
+  @apply p-2 bg-blue-500 text-white rounded w-full max-w-xs transition-all duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105;
+}
+
+.error-message {
+  @apply text-red-500 mt-2 text-sm bg-red-100 bg-opacity-70 p-2 rounded;
+}
+
+.toggle-auth {
+  @apply text-blue-500 cursor-pointer mt-4;
+}
+
+.toggle-auth:hover {
+  @apply text-blue-700;
+}
+
+.gender-switcher {
+  @apply flex space-x-2 mt-2;
+}
+
+.gender-button {
+  @apply p-2 bg-gray-300 rounded transition-all duration-300 ease-in-out transform hover:bg-blue-500 hover:text-white;
+}
+
+.gender-button.active {
+  @apply bg-blue-500 text-white;
+}
+
+.loader {
+  @apply border-4 border-t-4 border-t-transparent border-white rounded-full w-6 h-6 animate-spin;
+}
+
+.avatar-container {
+  @apply flex flex-col items-center;
+}
